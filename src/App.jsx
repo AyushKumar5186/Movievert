@@ -4,12 +4,11 @@ import "./App.css";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const API_URL = "http://www.omdbapi.com?apikey=b5c024ee";
 
 const App = () => {
+const API_URL = `https://www.omdbapi.com?apikey=b5c024ee`
   const [searchTerm, setSearchTerm] = useState("");
-  const [movies, setMovies] = useState
-  ([]);
+  const [movies, setMovies] = useState([]);
  
   useEffect(() => {
     searchMovies("avengers");
